@@ -1,0 +1,28 @@
+# Docker
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- main
+
+resources:
+- repo: self
+
+pool:
+  name: myhost-ps
+
+steps:
+- task: DockerCompose@0
+  displayName: 'remove container'
+  inputs:
+    dockerComposePath: '/usr/local/bin/docker-compose'
+    dockerComposeFile: 'docker-compose.yml'
+    dockerComposeCommand: 'down'  
+
+- task: DockerCompose@0
+  displayName: 'up container'
+  inputs:
+    dockerComposePath: '/usr/local/bin/docker-compose'
+    dockerComposeFile: 'docker-compose.yml'
+    dockerComposeCommand: 'up'
+    arguments: '-d'
