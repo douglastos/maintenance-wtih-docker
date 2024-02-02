@@ -16,6 +16,10 @@ steps:
    git clone git@github.com:douglastos/maintenance-wtih-docker.git
   displayName: clone
 
+- bash: |
+   cd $PWD/maintenance-wtih-docker.git
+  displayName: access to the directory
+
 - task: DockerCompose@0
   displayName: 'remove container'
   inputs:
