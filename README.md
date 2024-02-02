@@ -2,7 +2,7 @@
 
 Simple code in HTML and CSS with a maintenance page for testing.
 The code is with Docker for testing.
-To apply it to any server, just point [index.html]https://github.com/douglastos/maintenance-wtih-docker/blob/main/index.html) to the apache vhost.
+To apply it to any server, just point [index.html](https://github.com/douglastos/maintenance-wtih-docker/blob/main/index.html) to the apache vhost.
 
 ## PREREQUISITES
 
