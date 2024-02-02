@@ -17,7 +17,7 @@ steps:
   displayName: clone
 
 - bash: |
-   cd $PWD/maintenance-wtih-docker.git
+   cd $PWD/maintenance-wtih-docker
   displayName: access to the directory
 
 - task: DockerCompose@0
