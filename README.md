@@ -1,8 +1,3 @@
-![](https://www.duosystem.com.br/wp-content/uploads/2018/09/open-graph.png)|
---------- 
-
-
-
 ## CODE FOR MAINTENANCE PAGE
 
 Simple code in HTML and CSS with a maintenance page for testing.
